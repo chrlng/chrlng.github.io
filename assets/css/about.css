@@ -1,0 +1,112 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #FFFFF7; 
+  margin: 0;
+}
+
+.flower{
+  position: absolute;
+  opacity: 0.7;
+  width: 35%;
+  margin-left: 0%;
+  bottom: 3%;
+}
+
+/* Navbar */
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-image: linear-gradient(260deg, #FFF0CA 0%, #EFBCC1 100%);
+  opacity: 0.8;
+  margin: 0px;
+
+}
+
+li {
+  float: left;
+  padding-right: 28px;
+
+}
+
+li a {
+  display: block;
+  color: #504F4F;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 16px;
+  -webkit-transition: transform .5s ease;
+  -moz-transition: transform .5s ease;
+  -o-transition: transform .5s ease;
+  transition: transform .5s ease;
+}
+
+li a:hover {
+  transform: translateY(-4px);
+}
+
+
+/* Content */
+.content-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 8%;
+}
+
+.text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0%;
+  max-width: 40%;
+}
+
+.text{
+  position: relative;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 26px;
+  color: #504F4F;
+}
+
+.typewrite{
+  text-decoration: none;
+  color: #504F4F;
+  font-family: 'Baskervville', serif;
+  background-color: #FFF0CD;
+
+}
+
+/* Slideshow */
+
+.slideshow-container {
+  max-width: 25%;
+  margin-right: 9%;
+}
+
+.hex{
+  opacity: 0.8;
+  -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.75s;
+  animation-name: fade;
+  animation-duration: 1.75s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

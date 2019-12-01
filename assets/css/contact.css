@@ -1,0 +1,38 @@
+/* Navbar */
+
+body{
+  margin: 0px;
+  background-color: #FFFFF7; 
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-image: linear-gradient(260deg, #FFF0CA 0%, #EFBCC1 100%);
+  margin: 0px;
+
+}
+
+li {
+  float: left;
+  padding-right: 28px;
+
+}
+
+li a {
+  display: block;
+  color: #504F4F;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 16px;
+  -webkit-transition: transform .5s ease;
+  -moz-transition: transform .5s ease;
+  -o-transition: transform .5s ease;
+  transition: transform .5s ease;
+}
+
+li a:hover {
+  transform: translateY(-4px);
+}
