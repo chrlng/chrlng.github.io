@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153644395-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-153644395-1');
+</script>
+
+	<link rel="stylesheet" href="assets/css/about.css">
+    <link href="https://fonts.googleapis.com/css?family=Baskervville|Gupter|Raleway:400i|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    <body>
+
+    	<div class="navbar-container">
+    		<ul>
+    			<li><a href="index.html">home</a></li>
+    			<li><a href="about.html">about</a></li>
+    			<li><a href="construction.html">work</a></li>
+    			<li><a href="construction.html">contact</a></li>
+    		</ul>
+    	</div>
+
+        <div><img src="assets/img/editflower.png" class="flower"></div>
+                <div class="content-container">
+
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <img src="assets/img/me2.jpg" class="hex" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                      <img src="assets/img/hat.jpg" class="hex" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                      <img src="assets/img/coconut.jpg" class="hex" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                      <img src="assets/img/wavy.jpg" class="hex" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                      <img src="assets/img/dog.jpg" class="hex" style="width:100%">
+                    </div>
+                </div>
+
+                <div class="text-container">
+                    <h1>
+                      <a href="" class="typewrite" data-period="2000" data-type='[ "Hello there!", "The name is Christine Nguyen.", "I am a student.", "I am a boba addict (no surprise).", "I am a developer.", "I am a classical music connoisseur", "I am a foodie.", "I am a board game aficionado" ]'>
+                        <span class="wrap"></span>
+                      </a>
+                    </h1>
+                    <div class="text">
+                        <p>I'm a sophomore studying Data Science with an emphasis in Economics at University of California, Berkeley (go bears! ʕ∗•́ڡ•̀∗ʔ). As the typical southern californian girl from the sunny suburbs, you will often find me trying new foodie places, hanging by the beach, going on photoshoots with my friends, or being a homebody coding on my laptop. <br><br> Thanks for visiting!</p>
+                    </div>
+                </div>
+            </div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+
+/* Typewriter */
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #504F4F}";
+        document.body.appendChild(css);
+    };
+
+</script>
+
+    </body>
+</html>
