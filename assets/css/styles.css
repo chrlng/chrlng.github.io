@@ -51,6 +51,7 @@ a:hover {
 /**Navbar**/
 #nav {
 	max-height: 10vh;
+	max-width: 10vw;
 	left: 0%;
 	right: 0%;
 	background-color: white;
