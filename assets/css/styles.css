@@ -50,6 +50,7 @@ a:hover {
 
 /**Navbar**/
 #nav {
+	max-height: 10vh;
 	left: 0%;
 	right: 0%;
 	background-color: white;
@@ -178,7 +179,7 @@ a:hover {
 
 #about-section {
 	background-color: #F0F0F0;
-	padding:0px;
+	padding: 50px;
 }
 
 #about-section * {
