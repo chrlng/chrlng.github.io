@@ -50,8 +50,6 @@ a:hover {
 
 /**Navbar**/
 #nav {
-	max-height: 10vh;
-	max-width: 10vw;
 	left: 0%;
 	right: 0%;
 	background-color: white;
@@ -70,7 +68,6 @@ a:hover {
 }
 
 .nav-item {
-	font-size: 50%;
 	color: #2a2d34;
 	float: right;
 	display: block;
