@@ -69,6 +69,7 @@ a:hover {
 }
 
 .nav-item {
+	font-size: 50%;
 	color: #2a2d34;
 	float: right;
 	display: block;
