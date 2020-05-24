@@ -6,6 +6,8 @@ body, html{
 	scroll-behavior: smooth;
 	font-family: nobel, sans-serif;
 	font-style: normal;
+	margin:0;
+    padding:0;
 }
 
 h1 {
