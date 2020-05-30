@@ -27,10 +27,10 @@ p {
 a {
 	text-decoration: none;
 	color: #575757;
+	transition: 0.3s;
 }
 
 a:hover {
-	transition: 0.3s;
 	color: #d0cae7;
 }
 
