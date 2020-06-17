@@ -31,7 +31,7 @@ a {
 }
 
 a:hover {
-	color: #d0cae7;
+	color: #8d8d8d;
 }
 
 .container {
@@ -85,7 +85,7 @@ a:hover {
 }
 
 .nav-item:hover {
-	color: #d0cae7;
+	color: #8d8d8d;
 	transition: 0.5s;
 	transform: scale(1.05);
 
@@ -234,12 +234,30 @@ ul {
 
 /**Education**/
 
-#education-section {
-	background-color: #474d5a;
-	padding:50px;
-	padding-bottom: 70px;
-	min-height:100vh;
+#text .subtitle {
+	margin-bottom:40px;
 }
+
+#education-section {
+	padding:50px;
+	padding-bottom: 80px;
+	min-height:100vh;
+	background-color: #474d5a;
+}
+
+/* #text {
+	background-color: #474d5a;
+	padding-top:0px;
+} */
+
+/* .parallax {
+	background-image: linear-gradient(147deg, #FFFFFF 0%, #04619f 74%);
+  	min-height: 500px; 
+  	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+} */
 
 #education-section * {
 	color:white;
@@ -251,6 +269,10 @@ ul {
 
 #school {
 	align-items: flex-start;
+}
+
+#school p {
+	font-size: 14px;
 }
 
 #school * {
@@ -379,13 +401,14 @@ ul {
 /**Footer**/
 
 #footer {
-	height: 5em;
+	height: 6em;
 	text-align: center;
 	background-color: #F0F0F0;
 }
 
 #social-container * {
-	padding: 4px;
+	padding: 6px;
+	margin-bottom: 6px;
 }
 
 #social-container a {
