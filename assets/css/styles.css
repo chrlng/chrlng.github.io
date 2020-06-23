@@ -85,10 +85,22 @@ a:hover {
 }
 
 .nav-item:hover {
-	color: #8d8d8d;
+	color: #2a2d34;
 	transition: 0.5s;
-	transform: scale(1.05);
+}
 
+
+.nav-item:hover:after {
+    transform: scaleX(1);
+}
+
+.nav-item::after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #d3cbf5;  
+    transform: scaleX(0);  
+    transition: 350ms ease-in-out;
+    transform-origin: 0% 50%;
 }
 
 
